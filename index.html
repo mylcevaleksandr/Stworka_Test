@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleksandr Myltsev">
+    <title>Progress Bar Test</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script defer src="src/script.js"></script>
+</head>
+<body>
+<div class="frame">
+    <div class="frame_progress">
+        <div class="frame_progress-text">
+            <span class="progress-numerator">1</span>
+            <span class="progress-numerator">/</span>
+            <span class="progress-denominator">7</span>
+        </div>
+        <svg width="60" height="60" viewBox="0 0 60 60">
+            <circle class="bg"></circle>
+            <circle class="fg"></circle>
+        </svg>
+    </div>
+    <div class="frame_info">
+        <div class="frame_info-checklist">Чеклист</div>
+        <div class="frame_info-finished">Выполнено:
+            <span class="finished-numerator">0</span>
+            из
+            <span class="finished-denominator">7</span> действий
+        </div>
+        <div class="frame_info-next">Следующее действие: Созвониться с клиентом до 23.05.24 12:00</div>
+    </div>
+    <div class="frame_action">
+        <button class="btn">Открыть чеклист</button>
+    </div>
+</div>
+</body>
+</html>
